@@ -7,6 +7,7 @@
   body {
     background-color: #181818;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
   }
 
   body h1 {
@@ -26,6 +27,7 @@
   body h4 {
       color: white;
       font-size: 25px;
+      font-weight: 100;
   }
 
   .content {
@@ -61,6 +63,8 @@
     padding: 14px 15px;
     text-decoration: none;
     font-size: 17px;
+    text-shadow: 0 0 20px #000;
+    mix-blend-mode: difference;
   }
 
   .nav-links a:hover {
@@ -76,6 +80,7 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 0 5px 2000px rgb(19, 38, 53)
   }
 
   .banner p {
@@ -101,7 +106,7 @@
 
   .about img {
       border-radius: 50%;
-      box-shadow: 4px 4px 50px #000;
+      box-shadow: 4px 4px 50px #111;
   }
 
   .my-work {
@@ -111,9 +116,9 @@
   .my-work img {
       max-width: 500px;
       margin: 50px 0 0 0;
-      box-shadow: 4px 4px 50px #000;
+      box-shadow: 4px 4px 50px #111;
       filter: grayscale(100%);
-      transition: all 1s ease;
+      transition: 1s ease;
       border-radius: 5%;
   }
 
@@ -133,4 +138,42 @@
   .my-work-selectors h3 {
     text-align: center;
     padding: 20px 0 50px 0;
+  }
+
+  .contact {
+      padding: 200px 0 100px 0;
+  }
+
+  .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-top: 50px;
+      align-items: center;
+  }
+
+  .contact-info h4 {
+    padding: 10px 0 10px 0;
+  }
+
+  .contact-info img {
+      width: 800px;
+      border-radius: 5%;
+      box-shadow: 4px 4px 50px #111;
+      cursor: pointer;
+  }
+
+  .contact-info img:hover {
+      transform: scale(2);
+      transform: rotate(180deg);
+  }
+
+  .contact-info img:active {
+      transform: scale(3);
+      filter: saturate(50);
+  }
+
+  .contact-info a {
+      text-decoration: none;
+      color: white;
   }
