@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   body {
     background-color: #181818;
     font-family: Arial, Helvetica, sans-serif;
   }
-  
+
   body h1 {
     color: white;
     font-size: 55px;
@@ -17,15 +17,15 @@
     color: white;
     font-size: 55px;
   }
-    
+
   body h3 {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
-  
+
   body h4 {
       color: white;
-      font-size: 20px;
+      font-size: 25px;
   }
 
   .content {
@@ -53,7 +53,7 @@
     width: 1200px;
     margin: 0 auto;
   }
-  
+
   .nav-links a {
     float: left;
     color: #f2f2f2;
@@ -62,11 +62,11 @@
     text-decoration: none;
     font-size: 17px;
   }
-  
+
   .nav-links a:hover {
     color: rgb(134, 134, 134);
   }
-  
+
   .banner {
     background-image: url("../images/andrew-banner.jpg");
     background-size: cover;
@@ -95,13 +95,42 @@
   }
 
   .about p {
-      padding-top: 20px;
+      padding-top: 50px;
       width: 85%;
   }
 
   .about img {
       border-radius: 50%;
+      box-shadow: 4px 4px 50px #000;
   }
 
-  .about-content {
+  .my-work {
+      padding-top: 200px;
+  }
+
+  .my-work img {
+      max-width: 500px;
+      margin: 50px 0 0 0;
+      box-shadow: 4px 4px 50px #000;
+      filter: grayscale(100%);
+      transition: all 1s ease;
+      border-radius: 5%;
+  }
+
+  .my-work img:hover {
+      filter: grayscale(0%);
+      transform: scale(1.03);
+      transition: 1s ease;
+      cursor: pointer;
+  }
+
+  .my-work-selectors {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .my-work-selectors h3 {
+    text-align: center;
+    padding: 20px 0 50px 0;
   }
